@@ -1,0 +1,60 @@
+version: '3.4'
+
+services:
+  catalogdb:
+    container_name: catalogdb
+    environment:
+        - POSTGRES_USER=postgres
+        - POSTGRES_PASSWORD=1234567890
+        - POSTGRES_DB=CatalogDb
+    restart: always
+    volumes:
+        - postgres_catalog:/var/lib/postgresql/data/  
+
+  catalog.api:
+    environment:
+        - ASPNETCORE_ENVIRONMENT=Development
+        - ASPNETCORE_HTTP_PORT=8080
+        - ASPNETCORE_HTTPS_PORT=8081
+        - ConnectionStrings__Database=Server=catalogdb;port=5432;Database=CatalogDb;User Id=postgres;Password=1234567890;Include Error Detail=true
+    depends_on:
+        - catalogdb
+    ports:
+        - "6000:8080"
+        - "6060:8081"
+    volumes:
+        - ${APPDATA}/Microsoft/UserSecrets:/home/app .microsoft/usersecrets:ro
+        - ${APPDATA}/ASP.NET/Https:/home/app .aspnet/https:ro
+
+  basketdb:
+    container_name: basketdb
+    environment:
+        - POSTGRES_USER=postgres
+        - POSTGRES_PASSWORD=1234567890
+        - POSTGRES_DB=BasketDb
+    restart: always
+    volumes:
+        - postgres_basket:/var/lib/postgresql/data/
+
+  distributedcache:
+    container_name: distributedcache
+    restart: always
+
+  basket.api:
+    environment:
+        - ASPNETCORE_ENVIRONMENT=Development
+        - ASPNETCORE_HTTP_PORT=8080
+        - ASPNETCORE_HTTPS_PORT=8081
+        - ConnectionStrings__Database=Server=basketdb;port=5432;Database=BasketDb;User Id=postgres;Password=1234567890;Include Error Detail=true
+        - ConnectionString__Redis=distributedcache:6379
+    depends_on:
+        - basketdb
+        - distributedcache
+    ports:
+        - "6001:8080"
+        - "6061:8081"
+    volumes:
+        - ${APPDATA}/Microsoft/UserSecrets:/home/app .microsoft/usersecrets:ro
+        - ${APPDATA}/ASP.NET/Https:/home/app .aspnet/https:ro 
+
+  
