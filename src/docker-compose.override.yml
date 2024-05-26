@@ -56,5 +56,12 @@ services:
     volumes:
         - ${APPDATA}/Microsoft/UserSecrets:/home/app .microsoft/usersecrets:ro
         - ${APPDATA}/ASP.NET/Https:/home/app .aspnet/https:ro 
+    
+  angular.shopping.web:
+    depends_on:
+        - basket.api
+        - catalog.api
+    ports:
+        - "6008:4000"
 
   

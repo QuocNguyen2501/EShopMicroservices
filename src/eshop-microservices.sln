@@ -31,6 +31,38 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Basket.API", "Services\Bask
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Discount.Grpc", "Services\Discount\Discount.Grpc\Discount.Grpc.csproj", "{5AB9BC03-872C-4C62-A440-C12134507790}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AngularShoppingWeb", "AngularShoppingWeb", "{ABBC27ED-4CEF-4D75-B3D2-F0D4D71F480E}"
+	ProjectSection(SolutionItems) = preProject
+		WebApps\AngularShoppingWeb\.editorconfig = WebApps\AngularShoppingWeb\.editorconfig
+		WebApps\AngularShoppingWeb\.gitignore = WebApps\AngularShoppingWeb\.gitignore
+		WebApps\AngularShoppingWeb\angular.json = WebApps\AngularShoppingWeb\angular.json
+		WebApps\AngularShoppingWeb\Dockerfile = WebApps\AngularShoppingWeb\Dockerfile
+		WebApps\AngularShoppingWeb\package.json = WebApps\AngularShoppingWeb\package.json
+		WebApps\AngularShoppingWeb\README.md = WebApps\AngularShoppingWeb\README.md
+		WebApps\AngularShoppingWeb\server.ts = WebApps\AngularShoppingWeb\server.ts
+		WebApps\AngularShoppingWeb\tsconfig.app.json = WebApps\AngularShoppingWeb\tsconfig.app.json
+		WebApps\AngularShoppingWeb\tsconfig.json = WebApps\AngularShoppingWeb\tsconfig.json
+		WebApps\AngularShoppingWeb\tsconfig.spec.json = WebApps\AngularShoppingWeb\tsconfig.spec.json
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ordering.API", "Services\Ordering\Ordering.API\Ordering.API.csproj", "{2F05F459-6B8C-4BF7-9F08-927C4FB64C5B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ordering.Domain", "Services\Ordering\Ordering.Domain\Ordering.Domain.csproj", "{BEACFB3D-C368-4FC6-BD42-58EAFA51773C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ordering.Application", "Services\Ordering\Ordering.Application\Ordering.Application.csproj", "{3BBCF433-C045-4C6B-8306-B744FB9E7701}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ordering.Infrastructure", "Services\Ordering\Ordering.Infrastructure\Ordering.Infrastructure.csproj", "{83AAD1B5-91AD-4275-97BD-2EFB54732687}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blazor.ShoppingWeb", "WebApps\Blazor.ShoppingWeb\Blazor.ShoppingWeb\Blazor.ShoppingWeb.csproj", "{78AAA67B-61C1-4F81-94E7-CE83FBA03C4E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blazor.ShoppingWeb.Client", "WebApps\Blazor.ShoppingWeb\Blazor.ShoppingWeb.Client\Blazor.ShoppingWeb.Client.csproj", "{E6FF00AE-A13F-497D-A8DD-4914747EC13C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BlazorShoppingWeb", "BlazorShoppingWeb", "{0224EAC8-8D06-42E2-A406-0ADFCEE28762}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Identity", "Identity", "{6D03ABD2-1E45-4C18-9C9E-DD66EF109099}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MAUIShoppingApp", "WebApps\MAUIShoppingApp\MAUIShoppingApp.csproj", "{E5596BC7-108D-4A47-A53B-DA9B263AD35F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +89,36 @@ Global
 		{5AB9BC03-872C-4C62-A440-C12134507790}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5AB9BC03-872C-4C62-A440-C12134507790}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5AB9BC03-872C-4C62-A440-C12134507790}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F05F459-6B8C-4BF7-9F08-927C4FB64C5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F05F459-6B8C-4BF7-9F08-927C4FB64C5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F05F459-6B8C-4BF7-9F08-927C4FB64C5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F05F459-6B8C-4BF7-9F08-927C4FB64C5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEACFB3D-C368-4FC6-BD42-58EAFA51773C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEACFB3D-C368-4FC6-BD42-58EAFA51773C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEACFB3D-C368-4FC6-BD42-58EAFA51773C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEACFB3D-C368-4FC6-BD42-58EAFA51773C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BBCF433-C045-4C6B-8306-B744FB9E7701}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BBCF433-C045-4C6B-8306-B744FB9E7701}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BBCF433-C045-4C6B-8306-B744FB9E7701}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BBCF433-C045-4C6B-8306-B744FB9E7701}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83AAD1B5-91AD-4275-97BD-2EFB54732687}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83AAD1B5-91AD-4275-97BD-2EFB54732687}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83AAD1B5-91AD-4275-97BD-2EFB54732687}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83AAD1B5-91AD-4275-97BD-2EFB54732687}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78AAA67B-61C1-4F81-94E7-CE83FBA03C4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78AAA67B-61C1-4F81-94E7-CE83FBA03C4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78AAA67B-61C1-4F81-94E7-CE83FBA03C4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78AAA67B-61C1-4F81-94E7-CE83FBA03C4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6FF00AE-A13F-497D-A8DD-4914747EC13C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6FF00AE-A13F-497D-A8DD-4914747EC13C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6FF00AE-A13F-497D-A8DD-4914747EC13C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6FF00AE-A13F-497D-A8DD-4914747EC13C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5596BC7-108D-4A47-A53B-DA9B263AD35F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5596BC7-108D-4A47-A53B-DA9B263AD35F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5596BC7-108D-4A47-A53B-DA9B263AD35F}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{E5596BC7-108D-4A47-A53B-DA9B263AD35F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5596BC7-108D-4A47-A53B-DA9B263AD35F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5596BC7-108D-4A47-A53B-DA9B263AD35F}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -74,6 +136,16 @@ Global
 		{47AC0D3C-1D1F-47AD-9AF1-1DA571946BB4} = {98EB0BEC-A6F2-4662-8956-42F6ADF6E6B6}
 		{5EC6F67D-251E-4838-87DB-801F8B44B9A1} = {F9ECC4B0-D2A2-480F-933A-C86BF864B603}
 		{5AB9BC03-872C-4C62-A440-C12134507790} = {11C4AAE9-0A77-4CCA-B430-77F660C240A9}
+		{ABBC27ED-4CEF-4D75-B3D2-F0D4D71F480E} = {005AFE36-4AD3-4EAB-A703-2F3A04ACA7B0}
+		{2F05F459-6B8C-4BF7-9F08-927C4FB64C5B} = {02A74D3C-A8F5-47B3-AA35-EA729C637BAB}
+		{BEACFB3D-C368-4FC6-BD42-58EAFA51773C} = {02A74D3C-A8F5-47B3-AA35-EA729C637BAB}
+		{3BBCF433-C045-4C6B-8306-B744FB9E7701} = {02A74D3C-A8F5-47B3-AA35-EA729C637BAB}
+		{83AAD1B5-91AD-4275-97BD-2EFB54732687} = {02A74D3C-A8F5-47B3-AA35-EA729C637BAB}
+		{78AAA67B-61C1-4F81-94E7-CE83FBA03C4E} = {0224EAC8-8D06-42E2-A406-0ADFCEE28762}
+		{E6FF00AE-A13F-497D-A8DD-4914747EC13C} = {0224EAC8-8D06-42E2-A406-0ADFCEE28762}
+		{0224EAC8-8D06-42E2-A406-0ADFCEE28762} = {005AFE36-4AD3-4EAB-A703-2F3A04ACA7B0}
+		{6D03ABD2-1E45-4C18-9C9E-DD66EF109099} = {56D9618D-5D0E-4B23-9BC4-B426487CF84E}
+		{E5596BC7-108D-4A47-A53B-DA9B263AD35F} = {005AFE36-4AD3-4EAB-A703-2F3A04ACA7B0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F1645D9B-FA58-4836-900C-2D20DB970D0A}

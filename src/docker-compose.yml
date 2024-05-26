@@ -21,6 +21,12 @@ services:
    context: .
    dockerfile: Services/Basket/Basket.API/Dockerfile
 
+ angular.shopping.web:
+  image: ${DOCKER_REGISTRY-}angularshoppingweb
+  build:
+   context: .
+   dockerfile: WebApps/AngularShoppingWeb/Dockerfile
+
 volumes:
  postgres_catalog:
  postgres_basket:

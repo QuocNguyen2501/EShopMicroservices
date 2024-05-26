@@ -2,6 +2,7 @@ syntax = "proto3";
 
 option csharp_namespace = "Discount.Grpc";
 
+
 package discount;
 
 
@@ -30,13 +31,13 @@ message CreateDiscountRequest {
 }
 
 message UpdateDiscountRequest {
-	CouponModel = 1;
+	CouponModel coupon = 1;
 }
 
 message DeleteDiscountRequest {
 	string productName = 1;
 }
 
-message DeleteDiscountReponse {
+message DeleteDiscountResponse {
 	bool success = 1;
 }
